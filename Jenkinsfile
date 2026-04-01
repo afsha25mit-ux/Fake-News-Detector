@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/fake-news-detector.git'
+                git 'https://github.com/afsha25mit-ux/Fake-News-Detector.git'
             }
         }
 
