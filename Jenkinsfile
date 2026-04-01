@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/afsha25mit-ux/Fake-News-Detector.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t fake-news-app .'
